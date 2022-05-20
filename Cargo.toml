@@ -1,0 +1,17 @@
+[package]
+name = "nixauth"
+version = "0.1.0"
+edition = "2018"
+links = "ssl"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "*"
+clap = "3.0.0-beta.4"
+sqlite = "0.26"
+rpassword = "5.0.1"
+rand = "0.8.4"
+ctrlc = { version = "3.2.0", features = [ "termination" ] }
+crsrp = { path = "../crsrp" }
+cmd-arg-iter = { path = "../cmd-arg-iter" }
